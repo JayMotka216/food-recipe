@@ -9,6 +9,29 @@
  background-blend-mode: screen, overlay;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(27, 27, 144, 0.857);
+  padding: 40px;
+  margin-bottom: 10px;
+}
+
+.header-text {
+  font-size: 40px;
+  color: floralwhite;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: auto;
+}
+
+.header-subtext {
+  font-size: 15px;
+  color: floralwhite;
+  padding: 10px;
+  margin: auto;
+}
+
 .searchForm {
   min-height: 10vh;
   display: flex;

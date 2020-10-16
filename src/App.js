@@ -9,7 +9,7 @@ function App() {
 
     const [recipes, setRecipes] = useState([]);
     const [search, setSearch] = useState("");
-    const [query, setQuery] = useState('chicken');
+    const [query, setQuery] = useState('pizza');
     
     useEffect( () => {
       const getRecipe = async () => {
@@ -34,6 +34,11 @@ function App() {
     }
     return (
         <div className="App">
+          <div className="header">
+            <p className="header-text">Make it, Eat it!</p>
+            <p className="header-subtext">A deliceous Plate to change your mood!</p>
+          </div>
+
           <form onSubmit={getSearch} className="searchForm">
             <input type="text" className="searchBar" value={search} onChange={updateSearch} />
             <button type="submit" className="searchBtn">Search</button>
